@@ -8,6 +8,15 @@
 
 import UIKit
 
-class Calculate: NSObject {
-
+public class Calculate: NSObject {
+    
+    public func calc(values :[Int]) -> Int {
+        var sum = 0
+        values.forEach { (value) in
+            sum = sum + 1;
+        }
+        
+        return sum;
+    }
+    
 }
