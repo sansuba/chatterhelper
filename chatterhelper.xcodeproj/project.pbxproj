@@ -10,6 +10,8 @@
 		D15D61291EF8E294003C8273 /* chatterhelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15D611F1EF8E294003C8273 /* chatterhelper.framework */; };
 		D15D612E1EF8E294003C8273 /* chatterhelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D612D1EF8E294003C8273 /* chatterhelperTests.swift */; };
 		D15D61301EF8E294003C8273 /* chatterhelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D15D61221EF8E294003C8273 /* chatterhelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D15D61581EF8EB28003C8273 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D61571EF8EB28003C8273 /* Calculate.swift */; };
+		D15D61591EF8EB4E003C8273 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D15D61231EF8E294003C8273 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		D15D61281EF8E294003C8273 /* chatterhelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatterhelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15D612D1EF8E294003C8273 /* chatterhelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatterhelperTests.swift; sourceTree = "<group>"; };
 		D15D612F1EF8E294003C8273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15D61571EF8EB28003C8273 /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				D15D61221EF8E294003C8273 /* chatterhelper.h */,
+				D15D61571EF8EB28003C8273 /* Calculate.swift */,
 				D15D61231EF8E294003C8273 /* Info.plist */,
 			);
 			path = chatterhelper;
@@ -149,6 +153,7 @@
 					D15D611E1EF8E294003C8273 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = AG2WFX7LH2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D15D61271EF8E294003C8273 = {
@@ -181,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15D61591EF8EB4E003C8273 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15D61581EF8EB28003C8273 /* Calculate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +331,7 @@
 		D15D61341EF8E294003C8273 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AG2WFX7LH2;
@@ -336,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ss.chatterhelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +352,7 @@
 		D15D61351EF8E294003C8273 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AG2WFX7LH2;
@@ -362,6 +372,7 @@
 		D15D61371EF8E294003C8273 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = AG2WFX7LH2;
 				INFOPLIST_FILE = chatterhelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +385,7 @@
 		D15D61381EF8E294003C8273 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = AG2WFX7LH2;
 				INFOPLIST_FILE = chatterhelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +414,7 @@
 				D15D61351EF8E294003C8273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D15D61361EF8E294003C8273 /* Build configuration list for PBXNativeTarget "chatterhelperTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +423,7 @@
 				D15D61381EF8E294003C8273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
